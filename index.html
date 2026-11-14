@@ -22,20 +22,54 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="updated">The Scratch Project · Last updated September 23, 2026</p>
+<p class="updated">The Scratch Project · Last updated November 14, 2026</p>
 
 <p>The Scratch Project is a golf app for logging rounds, practice and notes. It is built so that
 your information stays on your own phone. This policy explains what that means in practice.</p>
 
 <h2>What We Collect</h2>
-<p>Nothing. The app has no account, no sign-in, no analytics, no advertising and no crash
-reporting service. Nothing you enter is ever sent to us or to anyone else.</p>
-<p>The app makes one kind of network request: when you open the hole map, it fetches satellite
-imagery tiles for that hole from Esri (ArcGIS Location Platform). That request tells Esri which
-patch of ground to draw, which reveals roughly where you are playing, and includes nothing else
-about you. Tiles are kept on your phone for about a week so a hole you have viewed works without
-a connection. Esri's own privacy policy covers how they handle those requests. If you never open
-the hole map, the app makes no network connections at all.</p>
+<p>Only the green locations you choose to share, described below, and only if you turn sharing
+on. The app has no account, no sign-in, no analytics, no advertising and no crash reporting
+service. Apart from shared green locations, nothing you enter is sent to us or to anyone else.</p>
+
+<h2>Network Requests</h2>
+<p>The app makes up to two kinds of network request:</p>
+<ul>
+<li><strong>Map imagery.</strong> When you open the hole map, it fetches satellite imagery tiles
+for that hole from Esri (ArcGIS Location Platform). That request tells Esri which patch of ground
+to draw, which reveals roughly where you are playing, and includes nothing else about you. Tiles
+are kept on your phone for about a week so a hole you have viewed works without a connection.
+Esri's own privacy policy covers how they handle those requests.</li>
+<li><strong>Shared green locations</strong>, only if you have turned sharing on. See below.</li>
+</ul>
+<p>If you never open the hole map and never share green locations, the app makes no network
+connections at all, apart from the app store handling a purchase (see Purchases).</p>
+
+<h2>Shared Green Locations</h2>
+<p>The hole map lets you place a green's center, front and back on a course you picked from the
+app's course list. The first time you do, the app asks whether to share green locations. Nothing
+is sent unless you choose Share, and you can turn sharing on or off at any time under
+Backup &amp; Restore. Turning it off also discards any locations still waiting to be sent.</p>
+<p>When sharing is on, each green point you place is sent with:</p>
+<ul>
+<li>which course and hole it belongs to, and whether it is the center, front or back;</li>
+<li>its map coordinates;</li>
+<li>whether you placed it on the map or at your own position, and, for your own position, how
+accurate the phone's location fix was;</li>
+<li>a random identifier created by the app on your phone, and the time it arrived.</li>
+</ul>
+<p>The random identifier is not tied to your name, your account, your phone number or your
+device's advertising ID. It lets us count how many different phones agree on a green, so that
+no single phone can move one, and limit how many points one phone can send in a day. A point you
+place at your own position does reveal that your phone was standing on that green at that
+moment; a point placed on the map does not say where you were.</p>
+<p>Shared points are stored by our database host, Supabase, in the United States. Like any
+internet request, sending them reveals your phone's IP address to that host; we do not store it
+with the points. We use the points only to improve the green positions in the app's course list:
+where at least three phones agree on a green, its position is included in a future version of
+the app. Shared points are never sold and never used for advertising.</p>
+<p>Because shared points carry no name or account, we cannot tell which points are yours, so we
+cannot find and delete them on request. Turning sharing off stops any more from being sent.</p>
 
 <h2>What the App Stores on Your Phone</h2>
 <p>Everything you enter stays in the app's private storage on your device: rounds and scores,
@@ -55,8 +89,14 @@ photo library if you ask it to. Photos, videos and recordings stay on your devic
 <p>The app asks for your precise location to show yardages to the green on the scorecard. Your
 position is compared with the green on your own course card and shown as a number; it is not
 recorded and it is not sent anywhere. If you use Center From My Position in the hole map's
-marker editor, the one position you were standing at is saved into that course card on your phone. You can decline the permission and the
-scorecard works without yardages.</p>
+marker editor, the one position you were standing at is saved into that course card on your
+phone, and, only if you share green locations, sent as described above. You can decline the
+permission and the scorecard works without yardages.</p>
+
+<h2>Purchases</h2>
+<p>Pro is a one-time purchase made through Google Play or the App Store. The store handles the
+payment under its own terms; the app only asks the store whether Pro is unlocked and keeps no
+record of the purchase itself. We never see your payment details.</p>
 
 <h2>Backups</h2>
 <p>You can export a backup file from Backup &amp; Restore. Where that file goes is up to you.</p>
@@ -66,17 +106,20 @@ Apple's terms. On Android, that cloud backup includes the app's database and set
 swing videos or photos. You can turn device backup off in your phone's settings.</p>
 
 <h2>Sharing</h2>
-<p>We do not sell, share or transfer any data, because we never receive any. Anything that
-leaves your phone, such as a backup file, a crash report or a saved image, leaves only because
-you chose to send or save it. The one exception is the hole map's imagery request described
+<p>We do not sell any data or use it for advertising. Anything that leaves your phone, such as a
+backup file, a crash report, a saved image or a shared green location, leaves only because you
+chose to send, save or share it. The one exception is the hole map's imagery request described
 above, which goes to Esri and carries only the map area to draw.</p>
 
 <h2>Deleting Your Data</h2>
 <p>Uninstalling the app deletes everything it stored on your device. Backup files you exported
-and device backups are kept until you delete them.</p>
+and device backups are kept until you delete them. Shared green locations stay in our database
+to keep improving the course list; they cannot be traced back to you.</p>
 
 <h2>Children</h2>
-<p>The app is not directed at children under 13 and collects no information from anyone.</p>
+<p>The app is not directed at children under 13 and does not knowingly collect information from
+them. The only information it can collect from anyone is the shared green locations described
+above, which carry no name or account.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be posted on this page with a new date.</p>
